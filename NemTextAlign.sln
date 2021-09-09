@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NemTextAlign", "NemTestAlign\NemTextAlign.csproj", "{A5C36E30-D6CB-4B9F-BC9F-F9CA18317836}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XU_NemTextAlign", "XU_NemTextAlign\XU_NemTextAlign.csproj", "{406DE8B4-F232-435B-AF8E-EFC17BBA4C07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5C36E30-D6CB-4B9F-BC9F-F9CA18317836}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C36E30-D6CB-4B9F-BC9F-F9CA18317836}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C36E30-D6CB-4B9F-BC9F-F9CA18317836}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C36E30-D6CB-4B9F-BC9F-F9CA18317836}.Release|Any CPU.Build.0 = Release|Any CPU
+		{406DE8B4-F232-435B-AF8E-EFC17BBA4C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{406DE8B4-F232-435B-AF8E-EFC17BBA4C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{406DE8B4-F232-435B-AF8E-EFC17BBA4C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{406DE8B4-F232-435B-AF8E-EFC17BBA4C07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA35700A-E6F6-4D05-B200-BF44EEC9BA23}
+	EndGlobalSection
+EndGlobal
