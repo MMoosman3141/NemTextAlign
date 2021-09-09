@@ -156,10 +156,10 @@ namespace XU_NemTextAlign {
     //  Assert.Equal(immediateOut.IndexOf("Michael"), extendedOut.IndexOf("Michael"));
     //}
 
-    [Fact(Skip = "Skipping")]
+    [Fact]
     public void TestPerformance() {
-      List<string> randomLines1 = GenerateRandomLines(20_000);
-      List<string> randomLines2 = GenerateRandomLines(20_000);
+      List<string> randomLines1 = GenerateRandomLines(300);
+      List<string> randomLines2 = GenerateRandomLines(300);
 
       Stopwatch stopwatch = new Stopwatch();
       stopwatch.Start();

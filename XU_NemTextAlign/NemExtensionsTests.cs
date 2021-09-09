@@ -39,10 +39,10 @@ namespace XU_NemTextAlign {
 
     [Fact]
     public void TestIEnumerableIndexesOf() {
-      IEnumerable<string> strList = "This is a test of the emergency broadcast system. It is only a test".Split(' ').AsEnumerable();
-      IEnumerable<string> lookFor1 = "a test".Split(' ').AsEnumerable();
-      IEnumerable<string> lookFor2 = "of the emergency".Split(' ').AsEnumerable();
-      IEnumerable<string> notToFind = "only is It".Split(' ').AsEnumerable();
+      List<string> strList = "This is a test of the emergency broadcast system. It is only a test".Split(' ').ToList();
+      List<string> lookFor1 = "a test".Split(' ').ToList();
+      List<string> lookFor2 = "of the emergency".Split(' ').ToList();
+      List<string> notToFind = "only is It".Split(' ').ToList();
 
       int[] indexes = strList.IndexesOf("a");
       Assert.Equal(2, indexes.Length);
@@ -64,10 +64,10 @@ namespace XU_NemTextAlign {
 
     [Fact]
     public void TestIEnumerableIndexOf() {
-      IEnumerable<string> strList = "This is a test of the emergency broadcast system. It is only a test".Split(' ').AsEnumerable();
-      IEnumerable<string> lookFor1 = "a test".Split(' ').AsEnumerable();
-      IEnumerable<string> lookFor2 = "of the emergency".Split(' ').AsEnumerable();
-      IEnumerable<string> notToFind = "only is It".Split(' ').AsEnumerable();
+      List<string> strList = "This is a test of the emergency broadcast system. It is only a test".Split(' ').ToList();
+      List<string> lookFor1 = "a test".Split(' ').ToList();
+      List<string> lookFor2 = "of the emergency".Split(' ').ToList();
+      List<string> notToFind = "only is It".Split(' ').ToList();
 
       int index = strList.IndexOf("a");
       Assert.Equal(2, index);
@@ -84,9 +84,9 @@ namespace XU_NemTextAlign {
 
     [Fact]
     public void TestNGrams() {
-      IEnumerable<string> strList = "This is a test of the emergency broadcast system. It is only a test.".Split(' ').ToList();
+      List<string> strList = "This is a test of the emergency broadcast system. It is only a test.".Split(' ').ToList();
 
-      IEnumerable<(IEnumerable<string> ngram, int index)> nGrams = strList.NGrams(1, 3);
+      IEnumerable<(List<string> ngram, int index)> nGrams = strList.NGrams(1, 3);
       //Tri-grams
       Assert.True(nGrams.ElementAt(0).ngram.RangeEquals(new[] { "This", "is", "a" }));
       Assert.Equal(0, nGrams.ElementAt(0).index);
